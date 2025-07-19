@@ -5,7 +5,7 @@ n = int(input())
 if n < 0:
     print("ice")
 #n > 100 -> water
-elif n > 100:
+elif n >= 100:
     print("vapor")
 #else vapor
 else:
