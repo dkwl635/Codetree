@@ -5,4 +5,9 @@ char = input()
 cnt = 0
 
 for i in (arr) :
-    print(i)
+    if i[2] == char or i[3] == char :
+        print(i)
+        cnt+=1
+
+
+print(cnt)
