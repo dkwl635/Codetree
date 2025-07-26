@@ -10,22 +10,23 @@ end_day = a
 end_hour = b
 end_min = c
 
-total = 0
+cnt = 0
 
- 
 
-while not (start_day == end_day and start_hour == end_hour and start_min == end_min) :
-    total+=1
-    start_min +=1
-    if(start_min == 60) :
-        start_min = 0
-        start_hour+=1
-    
-    if(start_hour == 24) :
-        start_hour = 0
-        start_day +=1
-     
-if start_day > end_day and start_hour > end_hour and start_min > end_min :
+if (start_day > end_day or 
+    (start_day == end_day and start_hour > end_hour) or
+     (start_day == end_day and start_hour == end_hour and start_min > end_min)) :
     print(-1)   
 else :
-    print(total)
+    while not (start_day == end_day and start_hour == end_hour and start_min == end_min) :
+        cnt+=1
+        start_min +=1
+        if(start_min == 60) :
+            start_min = 0
+            start_hour+=1
+    
+        if(start_hour == 24) :
+            start_hour = 0
+            start_day +=1 
+    print(cnt)
+        
