@@ -5,7 +5,7 @@ r, c = int(r), int(c)
 
 
 dir_x = [0,1,0,-1]
-dir_y = [1,0,-1,0]
+dir_y = [-1,0,1,0]
 
 dir_num = 0
 
@@ -23,7 +23,6 @@ else : dir_num = 3
 for _ in range(t) :
     nx = x + dir_x[dir_num]
     ny = y + dir_y[dir_num]
-   
     if in_range(nx,ny) :
         x = nx
         y = ny
