@@ -4,7 +4,7 @@ arr = [int(input()) for _ in range(N)]
 # Please write your code here.
 
 cnt = 1;
-max_cnt = 0;
+max_cnt = 1;
 prev = arr[0]
 
 for i in (arr[1::]) :
