@@ -21,9 +21,9 @@ for i in range(n):
         min_Y = min(min_Y, y[j])
         max_X = max(max_X ,x[j])
         max_Y = max(max_Y, y[j])
-        
+
     value = (max_X - min_X) * (max_Y - min_Y)
     if min_value > value :
         min_value = value
 
-print(value)
+print(min_value)
