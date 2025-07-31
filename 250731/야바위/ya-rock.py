@@ -5,11 +5,11 @@ a, b, c = list(a), list(b), list(c)
 
 # Please write your code here.
 MAX = 0
-for i in range(1,3) :
-
+for i in range(1,4) :
     answer = i
     cnt = 0
     for j in range (n) :
+       
         if a[j] == answer :
             answer = b[j] 
         elif b[j] == answer :
